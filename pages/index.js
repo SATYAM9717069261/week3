@@ -4,7 +4,6 @@ import Profileconatiner from './mainpage/Profilecontainer';
 export default function Home({ prop }) {
   const [searchResult, setsearchResult] = useState([])
   const [profile, setprofile] = useState(prop.data)
- 
   const searchHandler = (searchterm) => {
     if (searchterm !== "") {
       const newprofile = profile.filter((data) => {

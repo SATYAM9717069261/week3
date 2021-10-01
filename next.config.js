@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    Baseimageurl: ['reqres.in']
+    domains:['reqres.in']
   },
   env: {
     baseurl: {

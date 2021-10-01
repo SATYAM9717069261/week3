@@ -31,21 +31,11 @@ $color-light: lighten($color, 5%);
         width: 290px;
         height: 380px;
         overflow: hidden;
-        $img-size: 70px;
-        .avatar {
-            position: absolute;
-            left: (190 - $img-size)/2;
-            top: 32px;
-            width: $img-size;
-            height: $img-size;
-            border-radius: 50%;
-            cursor: pointer;
-            background: $color;
-        }
+        
         .info {
             position: absolute;
             text-align: center;
-            top: $img-size + 52;
+            top: 74px;
             width: 100%;
             div {
                 display: flex;

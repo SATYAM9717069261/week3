@@ -20,9 +20,6 @@ function Detailedprofile({ post }) {
                 <div className={Customstyle.center}>
                     <div className={Customstyle.card}>
                         <div className={Customstyle.left}>
-                            <div className={Customstyle.avatar}>
-                                <Image src={Profileimage} />
-                            </div>
                             <div className={Customstyle.info}>
                                 <div><span className={Customstyle.big}>Name : </span><span className={Customstyle.small}>{post[0].name}</span></div>
                                 <div><span className={Customstyle.big}>User Name : </span><span className={Customstyle.small}>{post[0].username}</span></div>
