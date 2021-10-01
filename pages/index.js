@@ -24,7 +24,7 @@ export default function Home({ prop }) {
 }
 
 export async function getStaticProps() {
-  const response = await fetch("https://reqres.in/api/users?per_page=10");
+  const response = await fetch(process.env.baseurl.profile);
   const data = await response.json();
   return {
     props: { prop: data }
