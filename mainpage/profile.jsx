@@ -20,4 +20,8 @@ export default function Profile({ data }) {
             </div>
         </div>
     )
-}
+}// Use Router 
+
+
+
+
