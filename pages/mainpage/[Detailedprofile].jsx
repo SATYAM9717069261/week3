@@ -1,4 +1,4 @@
-import Customstyle from '../styles/Detailedprofile.module.scss'
+import Customstyle from '../../styles/Detailedprofile.module.scss'
 import { useRouter } from "next/router"
 
 function Detailedprofile({ post }) {

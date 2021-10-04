@@ -23,6 +23,7 @@ export default function Profileconatiner({ term,searchkeyword } ) {
                 {console.log("Data Found in container=> ", term.data)}
                 {
                     term.map((data) => {
+                        console.log("DATA IN CONTIANER + > ",data)
                         return <Profile key={data.id} data={data} />
                     })
                 }

@@ -18,7 +18,6 @@ export default function Home({ prop }) {
 
   return (
      <Profileconatiner term={searchResult.length < 1 ? profile : searchResult} searchkeyword={searchHandler} />
-    //null
   )
 
 }
