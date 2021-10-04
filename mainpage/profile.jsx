@@ -3,7 +3,7 @@ import Customstyle from '../styles/profile.module.scss'
 import Profileimage from '../public/image1.bmp'
 import Link from 'next/link'
 export default function Profile({ data }) {
-    console.log("DATA +> ", data)
+    
     // console.log("Source Image Path => ", process?.images)
     return (
         <div className={Customstyle.wrapper}>
