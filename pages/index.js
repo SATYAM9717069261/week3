@@ -15,7 +15,7 @@ export default function Home({ prop }) {
       setsearchResult(profile)
     }
   }
-
+console.log("Index Page Props=> ", profile);
   return (
      <Profileconatiner term={searchResult.length < 1 ? profile : searchResult} searchkeyword={searchHandler} />
   )

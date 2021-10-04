@@ -71,7 +71,7 @@ export async function getStaticProps(context) {
     try {
         const { params } = context;
         const { Detailedprofile } = params;
-        console.log("Generate id => ", Detailedprofile)
+        //console.log("Generate id => ", Detailedprofile)
         const res = await fetch(
             `${process.env.baseurl.detail}?id=${Detailedprofile}`
         )
