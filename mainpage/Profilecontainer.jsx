@@ -1,5 +1,5 @@
 import Profile from './profile';
-import Customstyle from '../../styles/Home.module.scss'
+import Customstyle from '../styles/Home.module.scss'
 import { useRef } from 'react'
 export default function Profileconatiner({ term,searchkeyword } ) {
     const search = useRef("")
@@ -20,6 +20,7 @@ export default function Profileconatiner({ term,searchkeyword } ) {
                 </div>
             </div>
             <div className="container">
+                {console.log("Data Found in container=> ", term.data)}
                 {
                     term.map((data) => {
                         return <Profile key={data.id} data={data} />

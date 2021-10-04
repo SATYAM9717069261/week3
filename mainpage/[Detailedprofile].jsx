@@ -1,6 +1,4 @@
-import Customstyle from '../../styles/Detailedprofile.module.scss'
-import Profileimage from '../../public/image1.bmp'
-import Image from 'next/image'
+import Customstyle from '../styles/Detailedprofile.module.scss'
 import { useRouter } from "next/router"
 
 function Detailedprofile({ post }) {
@@ -67,7 +65,7 @@ function Detailedprofile({ post }) {
         </div>
     )
 }
-export default Detailedprofile;
+
 
 export async function getStaticProps(context) {
     try {
@@ -98,3 +96,18 @@ export async function getStaticPaths() {
         ], fallback: true
     }
 }
+
+// export async function getServerSideProps(context) {
+//     const { params } = context;
+//     const { Detailedprofile } = params;
+//     console.log("Generate id => ", Detailedprofile)
+//     const res = await fetch(
+//         `${process.env.baseurl.detail}?id=${Detailedprofile}`
+//     )
+//     const data = await res.json();
+//     return {
+//         props: { post: data }
+//     }
+// }
+
+export default Detailedprofile;

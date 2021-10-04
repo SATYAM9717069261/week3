@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import Customstyle from '../../styles/profile.module.scss'
-import Profileimage from '../../public/image1.bmp'
+import Customstyle from '../styles/profile.module.scss'
+import Profileimage from '../public/image1.bmp'
 import Link from 'next/link'
 export default function Profile({ data }) {
     console.log("DATA +> ", data)
-    console.log("Soucrce Image Path => ", process.images)
+    // console.log("Source Image Path => ", process?.images)
     return (
         <div className={Customstyle.wrapper}>
             <div className={Customstyle.profile}>
