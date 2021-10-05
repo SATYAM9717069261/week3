@@ -2,11 +2,13 @@ import Image from 'next/image'
 import Customstyle from '../styles/profile.module.scss'
 import Profileimage from '../public/image1.bmp'
 import Link from 'next/link'
+//import Redirect from './commonRoute'
+import { useRouter } from 'next/router'
 export default function Profile({ data }) {
-    
+    const router =useRouter();
     // console.log("Source Image Path => ", process?.images)
     return (
-        <div className={Customstyle.wrapper}>
+        <div className={Customstyle.wrapper} onClick={()=>router.push(`/mainpage/${data.id}`)}>
             <div className={Customstyle.profile}>
                 <div className={Customstyle.thumbnail}>
                     {/* <Image src={Profileimage} width="124px" height="124px" /> */}
@@ -21,6 +23,10 @@ export default function Profile({ data }) {
         </div>
     )
 }// Use Router 
+
+
+
+// <Redirect to="xyz"> 
 
 
 
